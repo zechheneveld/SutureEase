@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+    <link rel="stylesheet" th:href="@{https://www.w3schools.com/w3css/4/w3.css}"/>
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Raleway}"/>
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css}"/>
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{//jsfiddle.net/bootswatch/3he50zsf/embed/}"></script>
+
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+
+</head>
+
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar" >
+        <a href="#home" class="w3-bar-item w3-button w3-wide" style="text-decoration: none">SuturEase</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button" style="text-decoration: none">ABOUT</a>
+            <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> </a>
+            <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> </a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+        <!--<a class="navbar-brand" href="/">SuturEase</a>-->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+
+        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+            <!--<ul class="navbar-nav mr-auto">-->
+                <!--<li class="nav-item active">-->
+                    <!--<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item dropdown">-->
+                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--Products-->
+                    <!--</a>-->
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                        <!--<a class="dropdown-item" href="/crossBow">CrossBow</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="/securusEP">SecurusEP</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="/company">Company</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="/news">News</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="/contact">Contact Us</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<form class="form-inline my-2 my-lg-0">&ndash;&gt;-->
+                <!--&lt;!&ndash;<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>&ndash;&gt;-->
+            <!--&lt;!&ndash;</form>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</nav>-->
+    <!--<div class="backgroundImage">-->
+        <!--<img class="background1" src="https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/3885/logo.png"/>-->
+    <!--</div>-->
+
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small">Solving challenges</span><br/>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Solving challenges</span><br/>
+        <span class="w3-large">for laparoscopic surgeons.</span>
+        <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+</header>
+    <!-- About Section -->
+    <div th:id="about" class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">ABOUT SuturEase</h3>
+        <p class="w3-center w3-large">Key features of SuturEase</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-half">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Task</p>
+                <p>Suture Ease develops and markets innovative technologies that combine efficacy and ease of use for enhancing  laparoscopic procedures.</p>
+            </div>
+            <div class="w3-half">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Design</p>
+                <p>Our flagship device, the CrossBow Fascial Closure System, enables reproduceable trocar site closure by utilizing a unique “snare guide” technology in combination with a proprietary suture passer.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container3 w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+        <div class="w3-col m6 w3-text-white">
+            <h3>We know design.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>tempor incididunt ut labore et dolore.</p>
+            <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+        </div>
+        <div class="w3-col m6">
+            <video width="500" controls="controls" autoplay="autoplay">
+                <source src="/videos/CrossBow.mp4" type="video/mp4"/>
+            </video>
+        </div>
+    </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+    <p class="w3-center w3-large">The ones who run SuturEase</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:32px">
+        <div class="w3-col 6 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="https://emvllp.com/wp-content/uploads/2017/08/img-05.jpg" alt="Kirt" style="width:100%"/>
+                <div class="w3-container">
+                    <h3>Kirt Kirkland</h3>
+                    <p class="w3-opacity">CEO</p>
+                    <p>Mr. Kirt Kirtland is an experienced C.E.O., medical device management professional, and investor.
+                        He is a managing director at Emergent Medical Partners in Mountain View, CA.  With over 25 years of
+                        medical device experience and over 15 years of C.E.O. experience, Mr. Kirtland has a strong understanding
+                        of the clinical, operational, legal, and financial aspects of growing life science companies. Prior to serving
+                        as C.E.O. of a variety of medical devices companies, Mr. Kirtland held a variety of medical device management roles
+                        in operations, marketing, engineering and sales. Mr. Kirtland’s expansive medical device management experience includes
+                        a wide array of specialties including orthopedics, gynecology, urology, cardiology, gastroenterology and otolaryngology.
+                        Mr. Kirtland received his M.B.A. from Stanford University School of Business and his B.S. in biology from Stanford University.
+                        Mr. Kirtland is a Retired Captain in US Navy.</p>
+                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col 6 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="/images/Scott.jpg" alt="Scott" style="width:100%"/>
+                <div class="w3-container">
+                    <h3>Scott Heneveld</h3>
+                    <p class="w3-opacity">COO</p>
+                    <p>Mr. Heneveld has over 30 years of product design experience, with the past 25 years devoted to the development
+                        and commercialization of medical devices.  Mr. Heneveld was instrumental in the development of several laparoscopic
+                        instruments in the early days of minimally invasive surgery (Richard-Allan Medical).  He was a co-founder at Aortx,
+                        participating in the development of a novel percutaneous heart valve technology acquired by Hansen Medical.
+                        He was a key contributor at Sapphire Medical, developing a bone anchor system for orthopedic rotor cuff repair.
+                        The technology was acquired by Tornier.  Mr. Heneveld founded Spirx Closure LLC, developing proprietary devices for
+                        vascular suturing.  He leveraged his expertise with suturing technologies as the genesis to form Suture Ease.
+                        Scott received a B.S. in Mechanical Engineering from Worcester Polytechnic Institute in 1985.  As a consultant to
+                        the Medical Device industry, Mr. Heneveld has had the opportunity to work on projects crossing many specialties.
+                        He is the named inventor on over 120 issued or pending patents related to the area of medical devices.</p>
+                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+    <h3 class="w3-center">OUR WORK</h3>
+    <p class="w3-center w3-large">What we've done for people</p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m6">
+            <img src="/w3images/Scott.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone"/>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone"/>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone"/>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox"/>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet"/>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera"/>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter"/>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner"/>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image"/>
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <p id="footer">&copy; 2018 SuturEase. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

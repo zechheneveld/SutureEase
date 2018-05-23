@@ -1,0 +1,58 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: black;
+}
+#footer{
+    padding-left: 40px;
+}
+
+@media screen and (min-width: 320px) {
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/*MIDDLE >>>>>>>>*/
+
+.container-wrap{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: lightgrey;
+}
+.row{
+    background-color: lightgrey;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://www.modafinilsale.com/data/out/45/232608741-clean-desktop-backgrounds.jpg");
+    min-height: 100%;
+}
+.w3-container3{
+    background-image: url("http://multiplaga.com/c/dark-wood-floors-background-intended-for-greatest-how-to-clean-very-dirty-wood-floors-greencheese-on-remarkable-dark-wood-floors-background-936x527.jpg");
+
+}
+.w3-bar .w3-button {
+    padding: 16px;
+
+}
+.w3-bar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
