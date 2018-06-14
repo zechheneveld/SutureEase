@@ -47,7 +47,7 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("/images/background.jpg");
+    background-image: url("/images/background2.jpg");
     min-height: 100%;
 }
 .w3-container3{
@@ -88,4 +88,17 @@ hr{
 }
 .About {
     padding-top: 80px;
+}
+
+.newDiv {
+    padding-top: 90px;
+}
+#about{
+    background: linear-gradient(to left, gray , white);
+
+}
+@media screen and (max-width: 1040px) {
+    #pic2{
+        display: none;
+    }
 }
