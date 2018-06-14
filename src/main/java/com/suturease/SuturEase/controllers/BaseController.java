@@ -18,9 +18,9 @@ public class BaseController {
     public String company(){
         return "company";
     }
-    @RequestMapping("/contact")
+    @RequestMapping("/team")
     public String contact(){
-        return "contact";
+        return "team";
     }
     @RequestMapping("/news")
     public String news(){

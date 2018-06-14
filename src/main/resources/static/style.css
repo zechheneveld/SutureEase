@@ -23,6 +23,9 @@ html{
     #video{
         width: 100px;
     }
+    .person1 image {
+        float: top;
+    }
 }
 
 /*MIDDLE >>>>>>>>*/
@@ -44,11 +47,11 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("http://www.modafinilsale.com/data/out/45/232608741-clean-desktop-backgrounds.jpg");
+    background-image: url("/images/background.jpg");
     min-height: 100%;
 }
 .w3-container3{
-    background-image: url("http://multiplaga.com/c/dark-wood-floors-background-intended-for-greatest-how-to-clean-very-dirty-wood-floors-greencheese-on-remarkable-dark-wood-floors-background-936x527.jpg");
+    background-image: url("/images/background2.jpg");
 
 }
 .w3-bar .w3-button {
@@ -58,4 +61,31 @@ body, html {
 .w3-bar{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.person1{
+    padding-top: 90px;
+
+
+}
+.person2{
+    padding-top: 35px;
+
+}.person3{
+     padding-top: 35px;
+     padding-bottom: 35px;
+ }
+hr{
+    color: black;
+}
+.person1 p{
+    padding-right: 45px;
+}
+.person2 p{
+    padding-right: 45px;
+}
+.person3 p{
+    padding-right: 45px;
+}
+.About {
+    padding-top: 80px;
 }

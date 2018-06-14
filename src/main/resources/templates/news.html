@@ -2,54 +2,49 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>News</title>
-
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
 
     <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
     <link rel="stylesheet" th:href="@{/style.css}"/>
 
+    <link rel="stylesheet" th:href="@{https://www.w3schools.com/w3css/4/w3.css}"/>
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Raleway}"/>
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css}"/>
+
     <script type="text/javascript" th:src="@{/jquery.js}"></script>
     <script type="text/javascript" th:src="@{/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{//jsfiddle.net/bootswatch/3he50zsf/embed/}"></script>
+
     <script type="text/javascript" th:src="@{/client.js}"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">SuturEase</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Products
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/crossBow">CrossBow</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/securusEP">SecurusEP</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/company">Company</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/news">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact Us</a>
-            </li>
-        </ul>
-        <!--<form class="form-inline my-2 my-lg-0">-->
-        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>-->
-        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-        <!--</form>-->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar" >
+        <a href="/" class="w3-bar-item w3-button w3-wide" style="text-decoration: none">SuturEase</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-left w3-hide-small">
+            <a href="/#about" class="w3-bar-item w3-button" style="text-decoration: none">ABOUT</a>
+            <a href="/#team" class="w3-bar-item w3-button"><i class="fa fa-desktop"></i> </a>
+            <a href="/#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> </a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <div class="w3-right w3-hide-small">
+            <a class="w3-bar-item w3-button" href="/company" style="text-decoration: none">Company</a>
+            <a class="w3-bar-item w3-button" href="/news" style="text-decoration: none">News</a>
+            <a class="w3-bar-item w3-button" href="/team" style="text-decoration: none">Our Team</a>
+        </div>
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-</nav>
+</div>
+
+<footer class="footer">
+    <p id="footer">&copy; 2018 SuturEase. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Team</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+    <link rel="stylesheet" th:href="@{https://www.w3schools.com/w3css/4/w3.css}"/>
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Raleway}"/>
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css}"/>
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{//jsfiddle.net/bootswatch/3he50zsf/embed/}"></script>
+
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+
+</head>
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar" >
+        <a href="/" class="w3-bar-item w3-button w3-wide" style="text-decoration: none">SuturEase</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-left w3-hide-small">
+            <a href="/#about" class="w3-bar-item w3-button" style="text-decoration: none">ABOUT</a>
+            <a href="/#team" class="w3-bar-item w3-button"><i class="fa fa-desktop"></i> </a>
+            <a href="/#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> </a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <div class="w3-right w3-hide-small">
+            <a class="w3-bar-item w3-button" href="/company" style="text-decoration: none">Company</a>
+            <a class="w3-bar-item w3-button" href="/news" style="text-decoration: none">News</a>
+            <a class="w3-bar-item w3-button" href="/team" style="text-decoration: none">Our Team</a>
+        </div>
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<div class="person1 w3-light-grey" style="float:left; display:inline-block; ">
+<span style="float:left;width: 20%;">
+            <img width="150" height="181" src="https://emvllp.com/wp-content/uploads/2017/08/img-05.jpg" class="w3-circle" alt="Kirt"/>
+      </span>
+    <span style="float:right;width: 80%;">
+        <strong>Kirt Kirtland</strong>
+        <span>C.E.O.</span>
+    <p>Mr. Kirt Kirtland is an experienced C.E.O., medical device management professional, and investor. With over 25 years of medical device experience and over 15 years of C.E.O. experience, Mr. Kirtland supports portfolio companies with a strong understanding of the clinical, operational, legal, and financial aspects of growing life science companies. Prior to serving as C.E.O. of a variety of medical devices companies, Mr. Kirtland held a variety of medical device management roles in operations, marketing, engineering and sales. Mr. Kirtland’s expansive medical device management experience includes a wide array of specialties including orthopedics, gynecology, urology, cardiology, gastroenterology and otolaryngology. Mr. Kirtland has negotiated acquisitions, served as a board member and observer at portfolio companies, and sourced and investigated investments in conjunction with other partners. Mr. Kirtland received his M.B.A. from Stanford University School of Business and his B.S. in biology from Stanford University. Mr. Kirtland is a Retired Captain in US Navy.</p>
+</span>
+</div>
+
+<div class="person2 w3-light-grey" style="float:left; display:inline-block; ">
+<span style="float:left;width: 20%;">
+            <img width="150" height="181" src="/images/dad.jpg" class="w3-circle" alt="Scott"/>
+     </span>
+    <span style="float:right;width: 80%;">
+            <strong>Scott Heneveld</strong>
+            <span>C.O.O.</span>
+
+        <p>Mr. Heneveld has over 30 years of product design experience, with the past 25 years devoted to the development
+            and commercialization of medical devices.  Mr. Heneveld was instrumental in the development of several laparoscopic
+            instruments in the early days of minimally invasive surgery (Richard-Allan Medical).  He was a co-founder at Aortx,
+            participating in the development of a novel percutaneous heart valve technology acquired by Hansen Medical.
+            He was a key contributor at Sapphire Medical, developing a bone anchor system for orthopedic rotor cuff repair.
+            The technology was acquired by Tornier.  Mr. Heneveld founded Spirx Closure LLC, developing proprietary devices for
+            vascular suturing.  He leveraged his expertise with suturing technologies as the genesis to form Suture Ease.
+            Scott received a B.S. in Mechanical Engineering from Worcester Polytechnic Institute in 1985.  As a consultant to
+            the Medical Device industry, Mr. Heneveld has had the opportunity to work on projects crossing many specialties.
+            He is the named inventor on over 120 issued or pending patents related to the area of medical devices.
+        </p>
+    </span>
+</div>
+
+<div class="person3 w3-light-grey" style="float:left; display:inline-block; ">
+<span style="float:left;width: 20%;">
+            <img width="150" height="181" src="https://emvllp.com/wp-content/uploads/2017/08/img-07.jpg" class="w3-circle" alt="Kathy"/>
+         </span>
+<span style="float:right;width: 80%;">
+            <strong>Kathy Tellyer</strong>
+            <span>Manager of Administration</span>
+        <p>Ms. Kathy Tellyer is an experienced Controller and Administrator.  For more than 30 years Ms. Tellyer has worked for a variety of early stage businesses in the medical device and consumer products industry where she held positions of Corporate Secretary, Treasurer, Controller and various senior management roles.  Ms. Tellyer is an experienced professional in areas of finance, operations, production and regulatory aspects of emerging medical device companies as well as human resources and payroll.  Ms. Tellyer has served companies from inception to acquisition and initial public offerings.  Ms. Tellyer has a Bachelor of Science degree in Business Administration.</p>
+     </span>
+</div>
+
+<footer class="footer">
+    <p id="footer">&copy; 2018 SuturEase. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
