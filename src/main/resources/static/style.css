@@ -108,6 +108,9 @@ hr{
     #pic2{
         display: none;
     }
+    .About {
+        padding-right: 200px;
+    }
 }
 
 .person11 {
@@ -135,6 +138,9 @@ hr{
     .person31 {
         float: left;
         padding-left: 120px;
+    }
+    .About {
+        padding-right: 20px;
     }
 }
 
