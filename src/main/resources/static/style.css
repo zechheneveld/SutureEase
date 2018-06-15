@@ -36,7 +36,7 @@ html{
     background-color: lightgrey;
 }
 .row{
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -51,8 +51,8 @@ body, html {
     min-height: 100%;
 }
 .w3-container3{
-    background-image: url("/images/background2.jpg");
-
+    /*background-image: url("/images/background2.jpg");*/
+    background: linear-gradient(to left, gray , white);
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -88,10 +88,17 @@ hr{
 }
 .About {
     padding-top: 80px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 700px;
+    background-image: url("/images/backdrop.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
 }
 
-.newDiv {
-    padding-top: 90px;
+.firstRow {
+    padding-top: 50px;
 }
 #about{
     background: linear-gradient(to left, gray , white);
@@ -128,5 +135,66 @@ hr{
     .person31 {
         float: left;
         padding-left: 120px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Timeline*/
+.backdrop {
+    background-image: url("/images/backdrop.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    padding-left: 200px;
+   /*padding-right: 200px;*/
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
     }
 }
