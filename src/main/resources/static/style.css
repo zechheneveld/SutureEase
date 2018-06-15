@@ -102,3 +102,31 @@ hr{
         display: none;
     }
 }
+
+.person11 {
+    float: left;
+    padding-left: 20px;
+}
+.person21 {
+    float: left;
+    padding-left: 20px;
+}
+.person31 {
+    float: left;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 850px){
+    .person11 {
+        float: left;
+        padding-left: 120px;
+    }
+    .person21 {
+        float: left;
+        padding-left: 120px;
+    }
+    .person31 {
+        float: left;
+        padding-left: 120px;
+    }
+}

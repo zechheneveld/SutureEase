@@ -41,6 +41,14 @@
         </a>
     </div>
 </div>
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="/#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="/#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="/company" onclick="w3_close()" class="w3-bar-item w3-button">COMPANY</a>
+    <a href="/news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
+    <a href="/team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+</nav>
 
 <div class="newDiv">
     <p>Nov 12-16, 2017 : Visit Suture Ease at 46th AAGL Global Congress On Minimally Invasive Gynecology</p>
@@ -50,6 +58,21 @@
 <footer class="footer">
     <p id="footer">&copy; 2018 SuturEase. All rights reserved.</p>
 </footer>
+<script>
+    var mySidebar = document.getElementById("mySidebar");
 
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
 </body>
 </html>
