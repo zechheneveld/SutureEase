@@ -25,11 +25,12 @@
 <body>
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar" >
-        <a href="#home" class="w3-bar-item w3-button w3-wide" style="text-decoration: none">SuturEase</a>
+        <input href="#home" type="image" src="/images/logg.png" class="w3-bar-item w3-button w3-wide" style="width: 130px"/>
+        <!--<a href="#home" class="w3-bar-item w3-button w3-wide" style="text-decoration: none">SuturEase</a>-->
         <!-- Right-sided navbar links -->
         <div class="w3-left w3-hide-small">
             <!--<a href="#about" class="w3-bar-item w3-button" style="text-decoration: none">ABOUT</a>-->
-            <a href="#review" class="w3-bar-item w3-button"><i class="fa fa-desktop"></i> </a>
+            <!--<a href="#review" class="w3-bar-item w3-button"><i class="fa fa-desktop"></i> </a>-->
             <!--<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> </a>-->
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -55,11 +56,14 @@
 
 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="pic">
+        <img id="pic2" class="w3-display-right" style="margin: auto" width="100%" src="/images/Picture1.png"/>
+    </div>
     <div class="w3-display-left w3-text-white" style="padding:48px">
         <span class="w3-jumbo w3-hide-small">Solving challenges</span><br/>
         <span class="w3-xxlarge w3-hide-large w3-hide-medium">Solving challenges</span><br/>
         <span class="w3-large">for laparoscopic surgeons.</span>
-        <p><a href="#review" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+        <!--<p><a href="#review" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>-->
     </div>
     <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -69,9 +73,7 @@
         <i class="fa fa-twitter w3-hover-opacity"></i>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
-    <div class="pic">
-        <img id="pic2" class="w3-display-right" style="margin: auto" width="500px" src="/images/Picture1.png"/>
-    </div>
+
 </header>
 <!-- About Section -->
 <!--<div th:id="about" class="w3-container" style="padding:128px 16px" id="about">-->
@@ -92,12 +94,18 @@
 <!--</div>-->
 
 <!-- Promo Section - "We know design" -->
-<div class="w3-container3 w3-light-grey" style="padding:128px 16px" th:id="review">
+<div class="w3-container3 w3-light-grey" style="padding:60px 16px" th:id="review">
+    <div class="crossBow">
+        <img id="crossBow" style="margin: auto" width="50%" src="/images/crossBow2.png"/>
+    </div>
     <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3>We know design.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>tempor incididunt ut labore et dolore.</p>
-            <p><a href="/securusEP" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Projects</a></p>
+
+        <h1>Why the CrossBow?</h1>
+        <div class="w3-col m6" style="padding-top: 90px">
+
+            <p>Dr. Mirhashemi reviews a distinct advantage of
+                <br/>the CrossBow  technology</p>
+            <!--<p><a href="/securusEP" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Projects</a></p>-->
         </div>
         <div class="w3-hide-small">
             <div class="w3-col m6">
@@ -119,10 +127,10 @@
     </div>
     <br></br>
     <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3>We know Zech.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br/>tempor incididunt ut labore et dolore.</p>
-            <p><a href="/securusEP" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Projects</a></p>
+        <div class="w3-col m6" style="padding-top: 90px">
+            <p>Dr. Coates demonstrates the simplicity of using
+                <br/>the CrossBow Fasciial Closure System</p>
+            <!--<p><a href="/securusEP" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Projects</a></p>-->
         </div>
         <div class="w3-hide-small">
             <div class="w3-col m6">

@@ -106,7 +106,7 @@ hr{
 }
 @media screen and (max-width: 1040px) {
     #pic2{
-        display: none;
+        /*display: none;*/
     }
     .About {
         padding-right: 200px;
@@ -144,7 +144,9 @@ hr{
     }
 }
 
-
+.award1 {
+    float-displace: auto;
+}
 
 
 
