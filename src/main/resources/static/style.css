@@ -134,6 +134,10 @@ hr{
     float: left;
     padding-left: 20px;
 }
+.building {
+    display-model: right;
+
+}
 
 @media screen and (max-width: 850px){
     .person11 {
@@ -154,9 +158,9 @@ hr{
     .Awards {
         display: none;
     }
-    .building {
-        display: none;
-    }
+}
+.project1 {
+    padding-top: 80px;
 }
 
 
