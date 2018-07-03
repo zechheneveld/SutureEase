@@ -90,7 +90,7 @@ hr{
     padding-top: 80px;
     float: left;
     padding-left: 20px;
-    padding-right: 700px;
+    padding-right: 800px;
     background-image: url("/images/backdrop.jpg");
     background-position: center;
     background-size: cover;
@@ -104,13 +104,21 @@ hr{
     background: linear-gradient(to left, gray , white);
 
 }
+@media screen and (max-width: 1265px) {
+    .About {
+        padding-right: 500px;
+    }
+}
 @media screen and (max-width: 1040px) {
     #pic2{
         /*display: none;*/
     }
     .About {
-        padding-right: 200px;
+        padding-right: 300px;
     }
+    /*.Awards {*/
+        /*padding-right: 50px;*/
+    /*}*/
 }
 
 .person11 {
@@ -142,11 +150,15 @@ hr{
     .About {
         padding-right: 20px;
     }
+    .Awards {
+        display: none;
+    }
+    .building {
+        display: none;
+    }
 }
 
-.award1 {
-    float-displace: auto;
-}
+
 
 
 
