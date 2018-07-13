@@ -214,12 +214,85 @@ hr{
     clear: both;
 }
 
+#secondPtag, #firstPtag {
+    padding-left: 300px;
+}
+#adaptorPic {
+    padding-right: 20px;
+    padding-top: 2870px
+}
+#firstPVideo {
+    padding-right: 20px
+}
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1260px) {
+    #secondPtag, #firstPtag {
+        padding-left: 30px;
+    }
+    #adaptorPic {
+        padding-top: 2700px;
+    }
+    #fascia {
+        display: none;
+    }
+}
+@media screen and (max-width: 1170px) {
+    #adaptorPic {
+        padding-top: 2650px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #adaptorPic {
+        padding-top: 2600px;
+    }
+    #crossBow {
+        display: none;
+    }
+    #fascia {
+        display: none;
+    }
+    #firstPVideo {
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    #secondPtag {
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #firstPtag {
+        padding-top: 100px;
+    }
+    #secondPtag {
+        padding-top: 200px;
+    }
+    #adaptorPic {
+        padding-top: 2900px;
+    }
+}
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
         padding: 0;
     }
+    #secondPtag {
+        padding-top: 200px;
+    }
+    #product3b {
+        display: none;
+    }
 }
+@media screen and (max-width: 600px) {
+    #firstPtag {
+        padding-top: 0px;
+    }
+    #secondPtag {
+        padding-top: 0px;
+    }
+}
+
+
+
+
