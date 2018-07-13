@@ -280,9 +280,6 @@ hr{
     #secondPtag {
         padding-top: 200px;
     }
-    #product3b {
-        display: none;
-    }
 }
 @media screen and (max-width: 600px) {
     #firstPtag {
