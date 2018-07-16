@@ -214,7 +214,7 @@ hr{
     clear: both;
 }
 
-#secondPtag, #firstPtag {
+#secondPtag, #firstPtag, #thirdPtag {
     padding-left: 300px;
 }
 #adaptorPic {
@@ -225,10 +225,28 @@ hr{
     padding-right: 20px
 }
 
+#fourthPVideo {
+    padding-right: 20px;
+    padding-top: 4500px
+}
+#product4bc {
+    padding-top: 4500px
+}
+
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1350px) {
+    #fourthPVideo {
+        padding-top: 4200px
+    }
+    #product4bc {
+        padding-top: 4200px
+    }
+}
+
 @media screen and (max-width: 1260px) {
-    #secondPtag, #firstPtag {
+    #secondPtag, #firstPtag, #thirdPtag {
         padding-left: 30px;
     }
     #adaptorPic {
@@ -237,10 +255,22 @@ hr{
     #fascia {
         display: none;
     }
+    #fourthPVideo {
+        padding-top: 4000px
+    }
+    #product4bc {
+        padding-top: 4000px
+    }
 }
 @media screen and (max-width: 1170px) {
     #adaptorPic {
         padding-top: 2650px;
+    }
+    #fourthPVideo {
+        padding-top: 3800px
+    }
+    #product4bc {
+        padding-top: 3800px
     }
 }
 @media screen and (max-width: 1024px) {
@@ -260,6 +290,12 @@ hr{
     #secondPtag {
         padding-top: 50px;
     }
+    #fourthPVideo {
+        padding-top: 3700px
+    }
+    #product4bc {
+        padding-top: 3700px
+    }
 }
 @media screen and (max-width: 900px) {
     #firstPtag {
@@ -268,10 +304,30 @@ hr{
     #secondPtag {
         padding-top: 200px;
     }
+    /*#thirdPtag {*/
+        /*padding-top: 300px;*/
+    /*}*/
     #adaptorPic {
         padding-top: 2900px;
     }
+    #product4c {
+        display: none;
+    }
+    #product4b {
+        display: none;
+    }
+    #fourthPVideo {
+        padding-top: 4200px
+    }
 }
+
+@media screen and (max-width: 850px) {
+    #fourthPVideo {
+        padding-top: 4000px
+    }
+}
+
+
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
@@ -280,12 +336,19 @@ hr{
     #secondPtag {
         padding-top: 200px;
     }
+    #fourthPVideo {
+        display: none;
+    }
+
 }
 @media screen and (max-width: 600px) {
     #firstPtag {
         padding-top: 0px;
     }
     #secondPtag {
+        padding-top: 0px;
+    }
+    #thirdPtag {
         padding-top: 0px;
     }
 }
